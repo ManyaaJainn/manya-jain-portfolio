@@ -1,0 +1,83 @@
+[
+  {
+    "id": "mexico-war-on-drugs",
+    "title": "Inside the paradox of Mexico's never-ending war on drugs",
+    "url": "https://timesofindia.indiatimes.com/world/rest-of-world/inside-the-paradox-of-mexicos-never-ending-war-on-drugs/articleshow/129149038.cms",
+    "date": "2025-03-04",
+    "publication": "Times of India",
+    "excerpt": "An exploration of Mexico's decades-long struggle against drug cartels, examining why escalation has paradoxically deepened the crisis rather than resolving it.",
+    "tags": ["world", "politics", "longform"]
+  },
+  {
+    "id": "cigarettes-after-tax",
+    "title": "Cigarettes after tax: The post-February crisis, and how smokers are reacting",
+    "url": "https://timesofindia.indiatimes.com/india/cigarettes-after-tax-the-post-february-crisis-and-how-smokers-are-reacting/articleshow/128778391.cms",
+    "date": "2025-02-22",
+    "publication": "Times of India",
+    "excerpt": "Following the Union Budget's steep tax hike on cigarettes, a look at the shifting habits of Indian smokers and the informal economies springing up in response.",
+    "tags": ["india", "economy", "society"]
+  },
+  {
+    "id": "gamophobia-love",
+    "title": "Do jism, ek jaan? No thanks: How Gamophobia is changing the language of love",
+    "url": "https://timesofindia.indiatimes.com/india/do-jism-ek-jaan-no-thanks-how-gamophobia-is-changing-the-language-of-love/articleshow/128343019.cms",
+    "date": "2025-02-14",
+    "publication": "Times of India",
+    "excerpt": "A growing number of young Indians are choosing to stay unmarried, driven by a fear of commitment that is reshaping relationships and cultural expectations.",
+    "tags": ["india", "culture", "society"]
+  },
+  {
+    "id": "patriarchy-male-isolation",
+    "title": "Beyond patriarchy: How the 'duty' men created became their greatest source of isolation",
+    "url": "https://timesofindia.indiatimes.com/india/beyond-patriarchy-how-the-duty-men-created-became-their-greatest-source-of-isolation/articleshow/128075729.cms",
+    "date": "2025-02-08",
+    "publication": "Times of India",
+    "excerpt": "An examination of how traditional masculine roles of provider and protector have left many men emotionally isolated, unable to seek help or express vulnerability.",
+    "tags": ["india", "gender", "society", "longform"]
+  },
+  {
+    "id": "epstein-files-2025",
+    "title": "A dead man's archive: What the Epstein files unleashed in 2025",
+    "url": "https://timesofindia.indiatimes.com/world/us/a-dead-mans-archive-what-the-epstein-files-unleashed-in-2025/articleshow/126226303.cms",
+    "date": "2025-01-15",
+    "publication": "Times of India",
+    "excerpt": "The release of sealed Epstein documents sent shockwaves through political and financial circles, reigniting demands for accountability years after his death.",
+    "tags": ["world", "politics", "investigation"]
+  },
+  {
+    "id": "between-two-indias",
+    "title": "Between two Indias: Life on the 2025 feed",
+    "url": "https://timesofindia.indiatimes.com/india/between-two-indias-life-on-the-2025-feed/articleshow/126193124.cms",
+    "date": "2025-01-14",
+    "publication": "Times of India",
+    "excerpt": "Social media in 2025 presents two starkly different versions of India — one aspirational, the other struggling — and the dissonance is shaping public discourse.",
+    "tags": ["india", "media", "society"]
+  },
+  {
+    "id": "ai-in-classrooms",
+    "title": "AI in classrooms: Helping students learn or doing the thinking for them?",
+    "url": "https://timesofindia.indiatimes.com/india/ai-in-education-helping-students-learn-or-doing-the-thinking-for-them/articleshow/126036273.cms",
+    "date": "2025-01-10",
+    "publication": "Times of India",
+    "excerpt": "As AI tools become ubiquitous in Indian schools, educators and parents grapple with whether the technology enhances learning or simply replaces critical thought.",
+    "tags": ["india", "technology", "education"]
+  },
+  {
+    "id": "instagram-consumerism",
+    "title": "Wait\u2026 do I really need that bag, or is Instagram gaslighting me again?",
+    "url": "https://timesofindia.indiatimes.com/india/wait-do-i-really-need-that-bag-or-is-instagram-gaslighting-me-again/articleshow/125670370.cms",
+    "date": "2025-01-04",
+    "publication": "Times of India",
+    "excerpt": "A reflective piece on how algorithmic feeds and influencer culture drive compulsive consumption, and the growing push among young consumers to resist the cycle.",
+    "tags": ["india", "culture", "media"]
+  },
+  {
+    "id": "gen-z-open-letter",
+    "title": "An open letter from Gen Z: Are we really the problem or just the mirror no one wants to look into?",
+    "url": "https://timesofindia.indiatimes.com/india/an-open-letter-from-a-gen-z-are-we-really-the-problem-or-just-the-mirror-no-one-wants-to-look-into/articleshow/125484214.cms",
+    "date": "2024-12-28",
+    "publication": "Times of India",
+    "excerpt": "A first-person defence of Generation Z, arguing that criticism directed at the cohort often reflects older generations' discomfort with changing social norms.",
+    "tags": ["india", "opinion", "society", "longform"]
+  }
+]

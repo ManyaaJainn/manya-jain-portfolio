@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+Sitemap: https://manyajain15.github.io/manya-jain-portfolio/sitemap.xml

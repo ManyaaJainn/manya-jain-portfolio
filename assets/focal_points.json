@@ -1,0 +1,10 @@
+{
+  "photo1": {
+    "focus_x_pct": 50.0,
+    "focus_y_pct": 50.0
+  },
+  "photo2": {
+    "focus_x_pct": 50.0,
+    "focus_y_pct": 50.0
+  }
+}
