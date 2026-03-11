@@ -71,7 +71,7 @@
   <!-- ============================================================
        HERO
        ============================================================ -->
-  <section class="hero" id="hero" role="banner" aria-label="Intro banner" data-focus-x="50" data-focus-y="50" style="--hero-focus: 25% 50%;">
+  <section class="hero" id="hero" role="banner" aria-label="Intro banner" data-focus-x="50" data-focus-y="50">
     <!-- preload top hero -->
     <link rel="preload" as="image" href="assets/photo1-1600-900.webp" type="image/webp">
     <picture id="heroPicture">
@@ -98,20 +98,36 @@
     <!-- ============================================================
          ABOUT / SUMMARY
          ============================================================ -->
-    <section id="at-a-glance" class="at-a-glance section">
+    <section class="section" id="about">
       <div class="container">
         <div class="section-header">
           <span class="label">About</span>
           <hr class="section-rule">
           <h2>At a glance</h2>
         </div>
-        <ul class="glance-list">
-          <li>Journalist and content strategist at The Times of India</li>
-          <li>Expertise: Cultural reporting, storytelling, and digital communication</li>
-          <li>Focus areas: India, Gen Z identity, gender, technology, and global politics</li>
-          <li>Published work on AI ethics, drug policy, patriarchy, and consumer culture</li>
-          <li>HubSpot Content Marketing Certified</li>
-        </ul>
+        <div class="about-grid fade-in">
+          <div class="about-text">
+            <p>Manya Jain is a journalist and digital content producer at the Times of India, working at the intersection of culture, society, and platform-driven storytelling. She combines investigative rigor with audience-focused content strategy, building expertise in social media growth, content planning, and engagement analytics. Certified in HubSpot Content Marketing and NPTEL Effective Writing, Manya brings editorial craft and emerging digital-marketing skills to every story.</p>
+          </div>
+          <div class="about-highlights stagger">
+            <div class="highlight-item fade-in">
+              <span class="label">Publication</span>
+              <p>Times of India</p>
+            </div>
+            <div class="highlight-item fade-in">
+              <span class="label">Practices</span>
+              <p>Investigative Reporting, Longform Features, Content Strategy, Digital Marketing, Audience Growth</p>
+            </div>
+            <div class="highlight-item fade-in">
+              <span class="label">Focus</span>
+              <ul>
+                <li>Digital storytelling &amp; platform strategy</li>
+                <li>Audience growth &amp; social engagement</li>
+                <li>Editorial research &amp; longform reporting</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -139,23 +155,27 @@
     <!-- ============================================================
          CERTIFICATIONS
          ============================================================ -->
-    <section id="certifications" class="certifications section">
+    <section class="section" id="certifications">
       <div class="container">
         <div class="section-header">
           <span class="label">Credentials</span>
           <hr class="section-rule">
           <h2>Certifications</h2>
         </div>
-        <div class="cert-cards contact-grid">
-          <div class="cert-card contact-card fade-in">
-            <div class="cert-icon contact-icon">✓</div>
-            <div class="cert-title"><h4>HubSpot Content Marketing Certification</h4></div>
-            <a href="https://academy.hubspot.com/" target="_blank" rel="noopener" class="contact-link">View certificate</a>
+        <div class="contact-grid">
+          <div class="contact-card fade-in">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+            </div>
+            <h4>HubSpot Content Marketing</h4>
+            <p>Certification</p>
           </div>
-          <div class="cert-card contact-card fade-in">
-            <div class="cert-icon contact-icon">✓</div>
-            <div class="cert-title"><h4>NPTEL Effective Writing Certification</h4></div>
-            <a href="#" target="_blank" rel="noopener" class="contact-link">verification on request</a>
+          <div class="contact-card fade-in">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <h4>NPTEL Effective Writing</h4>
+            <p>Certification (verification on request)</p>
           </div>
         </div>
       </div>
@@ -164,11 +184,23 @@
     <!-- ============================================================
          CONTACT
          ============================================================ -->
-    <section id="contact" class="contact section contact-section">
-      <div class="container contact-grid">
-        
-        <!-- Contact Cards Group -->
-        <div class="contact-cards-group" style="display:flex; flex-direction:column; gap:1.5rem;">
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Get in Touch</span>
+          <hr class="section-rule">
+          <h2>Contact</h2>
+          <p class="section-subtitle">For pitches, commissions, and enquiries.</p>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-card fade-in" style="padding:0; border:none; background:transparent; overflow:hidden; box-shadow:none;">
+            <picture class="portrait">
+              <source type="image/webp" srcset="assets/photo2-1200-1200.webp 1200w, assets/photo2-600-600.webp 600w">
+              <img src="assets/photo2-600-600.jpg" alt="Portrait of Manya Jain" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);display:block;" />
+            </picture>
+          </div>
+
           <div class="contact-card fade-in">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-8.97 5.7a1.94 1.94 0 01-2.06 0L2 7"/></svg>
@@ -195,16 +227,8 @@
             <p>Full archive of articles on the Times of India.</p>
             <a href="https://timesofindia.indiatimes.com/toireporter/author-Manya-Jain-479276813.cms" target="_blank" rel="noopener" class="contact-link">TOI Author Page</a>
           </div>
+
         </div>
-
-        <!-- Portrait Aside -->
-        <aside class="contact-portrait">
-          <picture>
-            <source srcset="assets/photo2-600-600.webp" type="image/webp">
-            <img src="assets/photo2-600-600.jpg" alt="Portrait of Manya Jain" loading="lazy" width="600" height="600" style="border-radius:12px; width:100%; height:auto; object-fit:cover;">
-          </picture>
-        </aside>
-
       </div>
     </section>
 
