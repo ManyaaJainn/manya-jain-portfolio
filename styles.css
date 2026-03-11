@@ -811,11 +811,10 @@ p { margin-bottom: var(--space-md); }
 }
 
 /* --- Focused UI overrides --- */
-:root { --hero-focus-default: 30% 50%; }
 
-/* Hero: fluid, left-biased focus for mobile */
+/* Hero: fluid, left-biased focus */
 .hero, .site-hero, header.hero-section {
-  background-position: var(--hero-focus, var(--hero-focus-default));
+  background-position: 35% center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 62vh;
@@ -828,13 +827,13 @@ p { margin-bottom: var(--space-md); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: var(--hero-focus, var(--hero-focus-default));
+  object-position: 35% center;
 }
 
 /* Mobile tuning: nudge focus left */
-@media (max-width: 480px) {
-  .hero, .site-hero { min-height: 48vh; --hero-focus: 25% 50%; }
-  .hero img, .site-hero img { object-position: 25% 50%; }
+@media (max-width: 768px) {
+  .hero, .site-hero { min-height: 48vh; background-position: 20% center; }
+  .hero img, .site-hero img { object-position: 20% center; }
 }
 
 /* Hide article dates in UI */
@@ -850,5 +849,24 @@ article time { display: none !important; visibility: hidden !important; height: 
 
 /* Contact Section layout modifications */
 .contact.section { padding-top: var(--space-2xl); }
-.contact-grid { display: flex; flex-direction: column; gap: 2rem; }
-@media(min-width:768px){ .contact-grid { flex-direction: row; align-items: flex-start; } .contact-cards-group { flex: 1; } .contact-portrait { width: 300px; } }
+
+.contact-container, .contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container, .contact-grid {
+      flex-direction: column;
+  }
+  .contact-photo {
+      order: -1;
+  }
+}
+
+@media(min-width: 769px){
+  .contact-grid { flex-direction: row; align-items: flex-start; }
+  .contact-cards-group { flex: 1; }
+  .contact-portrait, .contact-photo { width: 300px; }
+}
