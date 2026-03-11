@@ -6,6 +6,8 @@ Production-ready journalist portfolio deployed to GitHub Pages.
 
 **[manyajain15.github.io/manya-jain-portfolio](https://manyajain15.github.io/manya-jain-portfolio/)**
 
+> **Note:** Updated editorial copy to emphasize digital-marketer positioning (hero + At-a-glance).
+
 ## Project Structure
 
 ```
@@ -107,6 +109,8 @@ Article metadata in `data/articles.json` was extracted from the public TOI autho
 - Full article text is **not** reproduced — each card links to the original TOI page
 
 **Please respect the Times of India's terms of service when re-scraping.**
+
+Note: Resume PDF retained at `assets/Manya_Jain_Resume.pdf` for archival/reference only; not linked on the public site.
 
 ## Tech Stack
 
