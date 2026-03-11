@@ -279,39 +279,6 @@
   }
 
 
-  /* ----------------------------------------------------------
-     HERO FOCAL POINT
-     1. Tries to load assets/focal_points.json (written by
-        scripts/generate_crops.py) and applies detected focus.
-     2. Falls back to data-focus-x / data-focus-y attributes
-        on the .hero element (manual override).
-     3. Sets --hero-focus CSS custom property for object-position.
-     ---------------------------------------------------------- */
-  async function applyHeroFocus(){
-    try{
-      const resp = await fetch('assets/focal_points.json', {cache:'no-store'});
-      if(!resp.ok) throw new Error('no focal JSON');
-      const focal = await resp.json();
-      const hero = document.getElementById('hero');
-      const key = 'photo1';
-      if(focal && focal[key]){
-        const fx = focal[key].focus_x_pct;
-        const fy = focal[key].focus_y_pct;
-        document.documentElement.style.setProperty('--hero-focus', `${fx}% ${fy}%`);
-        if(hero) { hero.setAttribute('data-focus-x', fx); hero.setAttribute('data-focus-y', fy); }
-        return;
-      }
-    }catch(e){
-      // fallback: read data attributes or center
-      const hero = document.getElementById('hero');
-      if(hero){
-        const dx = hero.getAttribute('data-focus-x') || 50;
-        const dy = hero.getAttribute('data-focus-y') || 50;
-        document.documentElement.style.setProperty('--hero-focus', `${dx}% ${dy}%`);
-      }
-    }
-  }
-
 
   /* ----------------------------------------------------------
      HERO IMAGE FALLBACK
@@ -334,7 +301,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     initNav();
     initSmoothScroll();
-    applyHeroFocus();
     initHeroFallback();
     renderFeatured();
     initArticlesPage();

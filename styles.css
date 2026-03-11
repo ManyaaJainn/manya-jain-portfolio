@@ -823,17 +823,34 @@ p { margin-bottom: var(--space-md); }
 }
 
 /* For <img> or <picture> hero fallback */
-.hero img, .site-hero img, .hero .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 35% center;
+.hero img.hero-img {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position: 70% 35%;
+  filter:saturate(.9) contrast(.95);
+  transition:transform .4s ease, opacity .4s ease;
 }
 
-/* Mobile tuning: nudge focus left */
-@media (max-width: 768px) {
-  .hero, .site-hero { min-height: 48vh; background-position: 20% center; }
-  .hero img, .site-hero img { object-position: 20% center; }
+@media (max-width:768px) {
+  .hero {
+    min-height:52vh;
+  }
+  .hero img.hero-img {
+    object-position: 78% 35%;
+  }
+  .hero-inner {
+    padding:32px 20px;
+    max-width:420px;
+  }
+  .hero-inner h1 {
+    font-size:2rem;
+  }
+  .hero-inner .lead {
+    font-size:1rem;
+  }
 }
 
 /* Hide article dates in UI */
@@ -844,29 +861,39 @@ p { margin-bottom: var(--space-md); }
 article time { display: none !important; visibility: hidden !important; height: 0 !important; margin: 0 !important; padding: 0 !important; }
 
 /* At a glance styles */
-.at-a-glance .glance-list { list-style: disc; margin-left: 1.25rem; color: #333; line-height: 1.6; }
-.at-a-glance h2 { margin-bottom: 1rem; }
+.at-a-glance .glance-list {
+  font-size:1.05rem;
+  line-height:1.75;
+  max-width:680px;
+  color:#2d2d2d;
+  list-style: disc;
+  margin-left: 1.25rem;
+}
+.at-a-glance li {
+  margin-bottom:10px;
+}
+.at-a-glance h2 {
+  margin-bottom:1.2rem;
+}
 
 /* Contact Section layout modifications */
 .contact.section { padding-top: var(--space-2xl); }
-
-.contact-container, .contact-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.contact-grid {
+  display:flex;
+  flex-direction:column;
+  gap:2rem;
+}
+.contact-portrait {
+  order:-1;
 }
 
-@media (max-width: 768px) {
-  .contact-container, .contact-grid {
-      flex-direction: column;
+@media(min-width:768px){
+  .contact-grid {
+    display:grid;
+    grid-template-columns:1fr 300px;
+    align-items:flex-start;
   }
-  .contact-photo {
-      order: -1;
+  .contact-portrait {
+    order:0;
   }
-}
-
-@media(min-width: 769px){
-  .contact-grid { flex-direction: row; align-items: flex-start; }
-  .contact-cards-group { flex: 1; }
-  .contact-portrait, .contact-photo { width: 300px; }
 }
