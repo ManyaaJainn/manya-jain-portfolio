@@ -614,9 +614,22 @@ p { margin-bottom: var(--space-md); }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-xl);
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   margin-top: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 320px 1fr;
+    align-items: start;
+  }
+  .contact-portrait {
+    order: 0;
+  }
+  .contact-cards-group {
+    order: 1;
+  }
 }
 
 .contact-card {
@@ -853,8 +866,8 @@ p { margin-bottom: var(--space-md); }
   }
 }
 
-/* Hide article dates in UI */
-.article-card .article-date,
+/* defensive: ensure any date classes are hidden */
+.article-card .card-date,
 .post-meta .date,
 .card .meta-date,
 .card-date,
@@ -878,22 +891,30 @@ article time { display: none !important; visibility: hidden !important; height: 
 
 /* Contact Section layout modifications */
 .contact.section { padding-top: var(--space-2xl); }
-.contact-grid {
-  display:flex;
-  flex-direction:column;
-  gap:2rem;
-}
-.contact-portrait {
-  order:-1;
+
+/* Hero Image Mobile Crop Fix */
+.hero img.hero-img {
+object-position: 70% 35%;
 }
 
-@media(min-width:768px){
-  .contact-grid {
-    display:grid;
-    grid-template-columns:1fr 300px;
-    align-items:flex-start;
+@media (max-width:480px) {
+  .hero img.hero-img {
+  object-position: 78% 40%;
   }
-  .contact-portrait {
-    order:0;
+}
+
+/* Mobile Button Size Fix */
+@media (max-width:480px){
+  .hero-cta .btn{
+  padding:10px 18px;
+  font-size:0.95rem;
+  border-radius:8px;
   }
+}
+
+/* At a Glance Typography */
+.at-a-glance .glance-list li{
+font-size:1.06rem;
+line-height:1.5;
+margin-bottom:0.5rem;
 }

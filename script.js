@@ -57,7 +57,7 @@
         '<h3><a href="' + article.url + '" target="_blank" rel="noopener">' + article.title + '</a></h3>' +
         '<p class="card-excerpt">' + (article.excerpt || '') + '</p>' +
         '<div class="card-meta">' +
-          '<span>' + (tags || article.publication) + '</span>' +
+          '<span>' + (tags || article.publication || '') + '</span>' +
           '<a href="' + article.url + '" target="_blank" rel="noopener" class="card-read-link">Read on TOI ' + ARROW_SVG + '</a>' +
         '</div>' +
       '</div>'
