@@ -1021,3 +1021,67 @@ margin-bottom:0.5rem;
     padding-bottom: 20px !important;
   }
 }
+
+/* =============================
+   HERO CTA — size tuning (mobile + desktop)
+   Purpose: make the hero CTA much smaller on mobile,
+            slightly smaller on desktop; keep text case
+   ============================= */
+
+/* Base: slightly reduce CTA on all viewports so desktop is less bulky */
+.hero-cta {
+  /* keep the visual container but reduce internal padding slightly */
+  padding: 6px 0;            /* container padding — small */
+  display: inline-block;
+  margin-top: 0.75rem;
+}
+.hero-cta .btn,
+.hero-cta a.btn {
+  /* ensure the button itself becomes more compact */
+  padding: 10px 20px !important;
+  font-size: 0.95rem !important;      /* slightly smaller on desktop */
+  line-height: 1.1;
+  max-width: 280px;
+  width: auto;
+  text-transform: none !important;    /* preserve the written case (use HTML text for capitalization) */
+  letter-spacing: 0.01em;
+  border-radius: 6px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* Mobile: make the CTA notably smaller and full-width with comfortable margins */
+@media (max-width: 480px) {
+  .hero-cta {
+    display: block;
+    padding: 0;                 /* remove extra container padding */
+    margin: 1rem 0 0 0;
+    text-align: left;           /* keep button aligned left like in screenshots */
+    max-width: 68%;             /* leave space so it doesn't span entire width */
+  }
+  .hero-cta .btn,
+  .hero-cta a.btn {
+    width: 100%;
+    max-width: none;
+    padding: 8px 14px !important;  /* SMALLER on mobile */
+    font-size: 0.95rem !important; /* ensure readable but smaller */
+    border-radius: 6px;
+  }
+
+  /* ensure hero inner area doesn't make the CTA feel cramped */
+  .hero-inner { padding-top: 36px; padding-bottom: 22px; }
+
+  /* nudge hero heading text a little to preserve balance */
+  .hero-inner h1 { font-size: 2.2rem; }
+  .hero-inner .lead { font-size: 1rem; max-width: 90%; }
+}
+
+/* Optional: a tiny desktop tweak for very large screens so the CTA doesn't dominate */
+@media (min-width: 1200px) {
+  .hero-cta .btn,
+  .hero-cta a.btn {
+    padding: 9px 20px;
+    font-size: 1rem;
+  }
+}
+
