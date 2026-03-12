@@ -918,3 +918,61 @@ font-size:1.06rem;
 line-height:1.5;
 margin-bottom:0.5rem;
 }
+
+/* ============================
+   Hero CTA & nav-brand tweaks
+   - smaller CTA (desktop & mobile)
+   - ensure sentence-case label (no forced uppercase)
+   - keep visual style but reduce padding/size
+   ============================ */
+
+/* Ensure inline hero buttons are not forced uppercase */
+.hero .hero-inner .btn,
+.hero .hero-inner .btn-primary,
+.hero .hero-inner .btn-primary:link,
+.hero .hero-inner .btn-primary:visited {
+  text-transform: none !important;   /* prevent uppercase */
+  font-weight: 600;
+  font-size: 1.0rem;                 /* slightly smaller on desktop */
+  padding: 10px 18px;                /* tighter padding */
+  border-radius: 8px;
+  line-height: 1.1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;                  /* prevents huge wide button */
+  max-width: 100%;
+  white-space: nowrap;
+}
+
+/* Reduce CTA size further on narrow viewports */
+@media (max-width: 768px) {
+  .hero .hero-inner .btn,
+  .hero .hero-inner .btn-primary {
+    font-size: 0.95rem;              /* smaller text */
+    padding: 8px 14px;               /* much smaller button */
+    min-width: 120px;
+  }
+
+  /* ensure hero inner layout doesn't push button far down */
+  .hero-inner { padding: 28px 18px; }
+}
+
+/* Make btn-primary styling consistent (doesn't force uppercase) */
+.btn-primary, .btn.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+  text-decoration: none;
+}
+
+/* tweak hero text sizing a little to reduce vertical spacing */
+.hero-inner h1 { margin-bottom: 0.6rem; }
+.hero-inner .lead { margin-bottom: 0.9rem; max-width: 520px; }
+
+/* Ensure object-position uses the focal point override already set in JS,
+   but also nudge left bias on small screens (safe fallback) */
+@media (max-width: 480px) {
+  :root { --hero-focus: 30% 50%; }
+  .hero img.hero-img, .hero .hero-image { object-position: var(--hero-focus); }
+}
