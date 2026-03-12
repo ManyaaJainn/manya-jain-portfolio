@@ -1245,3 +1245,21 @@ article time {
 .hero-cta-btn {
   text-transform: none !important;
 }
+
+/* ===== CONTACT PORTRAIT MOBILE ORDER FIX ===== */
+@media (max-width:768px) {
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-portrait {
+    order: 1;
+  }
+
+  .contact-cards-group {
+    order: 2;
+  }
+
+}
